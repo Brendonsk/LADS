@@ -1,12 +1,20 @@
 let r = prompt("Insira o raio do círculo:"); //janela de prompt que requisita ao usuário que insira um número
 
-let area = function(raio){ //função que a área duma circunferência
+/**Função que calcula e retorna a área duma circunferência
+ * 
+ * @param {*} raio raio da circunferência
+ */
+let area = function(raio){
     //Math.pow(a,b) = função da biblioteca Math que calcula a base "a" elevada ao expoente "b"
     //Math.PI = constante da biblioteca Math equivalente ao número irracional "pi"
     return Math.PI*Math.pow(raio,2);
 };
 
-let perimetro = function(raio){//função que calcula o perímetro duma circunferência
+/**Função que calcula e retorna o perímetro duma circunferência
+ * 
+ * @param {*} raio raio da circunferência
+ */
+let perimetro = function(raio){
     return Math.PI*2*raio;
 };
 
