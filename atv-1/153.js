@@ -1,4 +1,4 @@
-tempF = prompt("Insira a temperatura em graus Fahrenheit: "); //janela de prompt que requisita ao usuário que insira um número
+tempF = Number(prompt("Insira a temperatura em graus Fahrenheit: ")); //janela de prompt que requisita ao usuário que insira um número
 
 /**Função que calcula e retorna uma temperatura em graus Celsius dado uma temperatura em graus Fahrenheit
  * 
