@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function bongo()
+{
+  var imagem = document.getElementById("cat").src
+  if (imagem=='file:///home/brendon/Documents/github/LADS/HTML/imagens/01.gif') {
+    document.getElementById("cat").src = 'imagens/02.gif'
+  } else {
+    document.getElementById("cat").src = 'imagens/01.gif'
+  }
+}
+</script>
+<p style="text-align:center;">
+<button type="button" onclick=bongo() >Clique aqui</button>
+<img id = "cat" src = "imagens/01.gif" width = 600 height = 700></img>
+</p>
+</body>
+</html>

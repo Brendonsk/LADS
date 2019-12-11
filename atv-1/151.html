@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paridade</title>
+  <link rel = "stylesheet" href = "151.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <h2>Paridade</h2>
+    <form id="formulario" action="javascript:paridade()">
+      <p>
+        <label for = "par" class="label">Insira um número natural:</label>
+        <input id = "par" type="number" min="0" step="1" name = "par" >
+        <input type = "submit" value = "Checar paridade">
+        <br/>
+      </p>
+    </form>
+    <p>
+      <label id = "display" visibility="hidden"></label>
+    </p>
+  </div>
+</body>
+<script type = "text/javascript" src = "151.js"></script> 
+</html>

@@ -1,19 +1,27 @@
-let n1 = Number(prompt("Insira sua primeira nota: "));//janela de prompt que requisita ao usuário que insira um número
-let n2 = Number(prompt("Insira sua segunda nota: "));//janela de prompt que requisita ao usuário que insira um número
+
 
 /**Função que calcula e retorna a média das duas notas passadas como parâmetros
- * 
- * @param {*} N1 Primeira nota
- * @param {*} N2 Segunda nota
  */
-let media = function(N1,N2){
-    let mensagem = "";
-    sm = (N1+N2)/2;
+let media = function(){
+  nota1 = document.getElementById("formulario").nota1.value;
+  nota2 = document.getElementById("formulario").nota2.value;
+
+  if (!(nota1==null ||nota1=="" || nota2==null ||nota2=="")){
+    nota1=Number(nota1);
+    nota2=Number(nota2);
+    sm = (nota1+nota2)/2;
     if(sm>=6){
-        mensagem+="PARABÉNS! Você foi aprovado!\n";
+      document.getElementById("mensagem").hidden=false;
+      
+    }else{
+      document.getElementById("mensagem").hidden=true;
     }
-    mensagem+="Média semestral = " + sm;
-    return mensagem;
+      valor.innerHTML = "Média semestral: "+sm.toFixed(1);
+  }else{
+    document.getElementById("mensagem").hidden=true
+    document.getElementById("valor").innerHTML="";
+  }
 };
 
-alert(media(n1,n2))
+alert(media(nota1,nota2))
+

@@ -1,0 +1,21 @@
+.container{
+  text-align: center;
+  height:auto;
+  margin: 25% 0 25% 0;
+}
+
+.saida {
+  color:white;
+  border-radius:5px;
+  padding:10px;
+  margin: 10px 40px;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

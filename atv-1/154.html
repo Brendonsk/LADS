@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Media Semestral</title>
+  <link rel="stylesheet" href="154.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <h2>Média Semestral</h2>
+    <br/>
+    <form id="formulario" action="javascript:media()">
+      <label for="nota1" class="label">Primeira nota:</label>
+      <input name="nota1" type="number" step="0.1" min="0" max="10">
+      <br/>
+      <br/>
+      <label for="nota2" class="label">Segunda nota:</label>
+      <input name="nota2" type="number" step="0.1" min="0" max="10">
+      <br/>
+      <br/>
+      <input type="submit" value="Calcular média">
+      <br/>
+      <br/>
+    </form>
+    <label id="mensagem" hidden="hidden">PARABÉNS! Você foi aprovado!</label>
+    <br/>
+    <br/>
+    <label id="valor"></label>
+  </div>
+</body>
+<script type="text/javascript" src="154.js"></script>
+</html>

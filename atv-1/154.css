@@ -1,0 +1,35 @@
+#mensagem {
+  background-color:green;
+  color:white;
+  border-radius:5px;
+  padding:5px;
+  margin: 10px 40px;
+}
+
+label{
+  margin-bottom:300px;
+}
+
+.container{
+  height:auto;
+  width:auto;
+  text-align: center;
+  margin:25% 0 25% 0;
+}
+
+form,h2,label,input{
+  width:auto;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='submit']{
+  margin:20px;
+}
