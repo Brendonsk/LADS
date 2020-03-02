@@ -3,11 +3,11 @@
 <head>
   <title>Paridade</title>
   <link rel = "stylesheet" href = "151.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
 </head>
 <body>
   <div class="container">
-    <h2>Paridade</h2>
+    <h1>Paridade</h1>
     <form id="formulario" action="javascript:paridade()">
       <p>
         <label for = "par" class="label">Insira um número natural:</label>
@@ -16,10 +16,15 @@
         <br/>
       </p>
     </form>
-    <p>
-      <label id = "display" visibility="hidden"></label>
-    </p>
+
+    <div id="caixa_colorida_saida" class="saida" visibility="hidden">
+      <p>
+        <label id = "display"></label>
+      </p>
+    </div>
   </div>
+
+
 </body>
 <script type = "text/javascript" src = "151.js"></script> 
 </html>

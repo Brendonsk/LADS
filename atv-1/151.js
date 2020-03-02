@@ -2,26 +2,23 @@
  * Função que recebe um número inteiro inserido pelo usuário e retorna verdadeiro caso ele seja par, e falso caso ele seja ímpar
  */
 
-// document.getElementById("par").setCustomValidity("O número precisa ser natural (numero ≥ 0)")
-
-let paridade = function() {
+ let paridade = function() {
     
     par = document.getElementById("formulario").par.value;
     if(par)
     {
         par=parseInt(par);
-        document.getElementById("display").setAttribute("class","saida");
+        document.getElementById("caixa_colorida_saida").setAttribute("class","saida");
         if (par%2==0) {
-            document.getElementById("display").innerHTML = "Par";
-            document.getElementById("display").setAttribute("style","background-color:green");
+            document.getElementById("caixa_colorida_saida").innerHTML = "Par";
+            document.getElementById("caixa_colorida_saida").setAttribute("style","background-color:green");
         } else {
-            document.getElementById("display").innerHTML = "Ímpar";
-            document.getElementById("display").setAttribute("style","background-color:rgb(214, 65, 65)");
+            document.getElementById("caixa_colorida_saida").innerHTML = "Ímpar";
+            document.getElementById("caixa_colorida_saida").setAttribute("style","background-color:rgb(214, 65, 65)");
         }
     }
     else{
-        document.getElementById("display").innerHTML = "";
-        document.getElementById("display").setAttribute("style","background-color:white");
+        alert("O campo não pode estar vazio!")
     }
 };
 
