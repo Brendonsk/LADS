@@ -3,18 +3,21 @@
 <head>
   <title>Conversão F2C</title>
   <link rel="stylesheet" href="152.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
 </head>
 <body>
   <div class="container">
-    <h2>Conversão graus Fahrenheit para graus Celsius</h2>
+    <h1>Conversão graus Fahrenheit para graus Celsius</h1>
     <br/>
     <form id="formulario" action="javascript:calculos()">
       <label for="fahrenheit" class="label">Insira a temperatura, em graus Fahrenheit:</label>
       <input id="fahrenheit" type="number" step="0.1" name="fahrenheit">
-      <br/>
-      <input type="submit" value="Converter para °C">
+      <input type="submit" value="Converter">
     </form>
-    <label id="celsius"></label>
+    <br/>
+    <span id="resultado" class="saida" style="width:auto; visibility: hidden;">
+      <label id="celsius"></label>
+    </span>
   </div>
 </body>
 <script type="text/javascript" src="153.js"></script>

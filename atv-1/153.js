@@ -7,6 +7,7 @@ let C = function(F){
 }
 
 let calculos = function(){
+  document.getElementById("resultado").setAttribute("style","visibility:visible");
   fahrenheit = document.getElementById("formulario").fahrenheit.value;
   if (fahrenheit) {
     fahrenheit = parseFloat(fahrenheit);
